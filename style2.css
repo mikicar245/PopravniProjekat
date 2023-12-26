@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('slika1.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+nav {
+    background-color: #444;
+    padding: 16px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+main {
+    padding: 32px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.hero-card {
+    text-align: center;
+}
+
+.hero-card h3 {
+    color: #333;
+}
+
+.hero-card p {
+    color: #666;
+}
+
+.hero-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+    margin-top: auto;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
